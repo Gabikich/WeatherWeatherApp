@@ -43,26 +43,24 @@ project-root/
 
 ## ✅ Features Implemented
 
-### Dashboard Page:
+### Dashboard:
 
 * Dynamically lists user-selected favorite cities from localStorage.
 * Each city card links to the City Focus page with the appropriate city parameter.
 
-### Preferences Page:
+### Preferences:
 
 * Users can select favorite cities and display preferences.
 * Selections are saved to localStorage.
 
-### City Focus Page:
+### City Focus:
 
 * Reads city name from URL parameters.
 * Loads data from `weather_data.js`.
 * Displays:
-
   * Today's weather (description, max temperature, wind speed)
   * Current hour forecast (temperature and wind)
   * 7-day summary (weather description for each day)
-  * Current time
 
 ## 🙌 Credits
 
