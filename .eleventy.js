@@ -6,9 +6,9 @@ module.exports = function(eleventyConfig) {
   
     return {
       dir: {
-        input: ".",          // raiz do projeto
-        includes: "_includes", // onde estão os arquivos como footer.njk
-        output: "_site"        // pasta de saída
+        input: ".",         
+        includes: "_includes", 
+        output: "_site"       
       }
     };
   };
