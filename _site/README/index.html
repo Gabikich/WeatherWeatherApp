@@ -1,0 +1,79 @@
+<h1>Whether Weather - Assignment Project</h1>
+<h2>🌦️ About the Project</h2>
+<p>Whether Weather is a simple weather forecast website developed as part of the Computer Science course at SETU - Waterford.
+The project allows users to:</p>
+<ul>
+<li>View a dashboard with cards for their favorite cities.</li>
+<li>Click on a city to view detailed forecast data (City Focus).</li>
+<li>Select their favorite cities and display preferences (Preferences Page).</li>
+</ul>
+<p>All data is locally sourced from provided JSON files or the included <code>weather_data.js</code> file, as per assignment instructions. No external APIs were used.</p>
+<h2>🧰 Technologies Used</h2>
+<ul>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>JavaScript</li>
+<li>Bulma CSS Framework</li>
+<li>Eleventy (Static Site Generator)</li>
+</ul>
+<h2>🚀 Website deployed in netlifly</h2>
+<ol>
+<li>Make sure you have Eleventy installed (<code>npm install @11ty/eleventy --save-dev</code>)</li>
+<li>Run the project locally: eleventy --serve</li>
+</ol>
+<ul>
+<li>Open your browser and go to <code>http://localhost:8080/</code></li>
+</ul>
+<h2>📄 Folder Structure</h2>
+<p>project-root/
+│
+├── index.html
+├── preferences.html
+├── cityfocus.html
+│
+├── style.css
+├── js/
+│   └── bulma.js
+├── data/
+│   └── weather_data.js
+├── images/
+│   └── logo.png</p>
+<h2>✅ Features Implemented</h2>
+<h3>Dashboard Page:</h3>
+<ul>
+<li>Dynamically lists user-selected favorite cities from localStorage.</li>
+<li>Each city card links to the City Focus page with the appropriate city parameter.</li>
+</ul>
+<h3>Preferences Page:</h3>
+<ul>
+<li>Users can select favorite cities and display preferences.</li>
+<li>Selections are saved to localStorage.</li>
+</ul>
+<h3>City Focus Page:</h3>
+<ul>
+<li>
+<p>Reads city name from URL parameters.</p>
+</li>
+<li>
+<p>Loads data from <code>weather_data.js</code>.</p>
+</li>
+<li>
+<p>Displays:</p>
+<ul>
+<li>Today's weather (description, max temperature, wind speed)</li>
+<li>Current hour forecast (temperature and wind)</li>
+<li>7-day summary (weather description for each day)</li>
+<li>Current time</li>
+</ul>
+</li>
+</ul>
+<h2>🙌 Credits</h2>
+<ul>
+<li>Weather data and specifications provided by the course instructor.</li>
+<li>Bulma CSS: <a href="https://bulma.io/">https://bulma.io/</a></li>
+<li>Google Apis for fonts.</li>
+</ul>
+<hr>
+<h2>📅 Last Updated</h2>
+<p>May 2025</p>
+<hr>

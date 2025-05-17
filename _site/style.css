@@ -1,0 +1,15 @@
+body {
+  font-family: "Poppins", sans-serif 
+}
+
+.card {
+    cursor: pointer;
+  }
+
+
+.box  {
+  min-width: 150px; /* aumenta o tamanho mínimo da box */
+  text-align: center;
+  margin: 0,5rem
+  
+}
