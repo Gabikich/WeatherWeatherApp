@@ -64,9 +64,20 @@ project-root/
 
 ## 🙌 Credits
 
-* Weather data and specifications provided by the course instructor.
-* Bulma CSS: [https://bulma.io/](https://bulma.io/)
-* Google Apis for fonts.
+Bulma CSS Framework - https://bulma.io
+Utilizado para o layout do site com classes CSS responsivas, componentes de navegação, cards, botões e formatação geral.
+
+Eleventy (11ty) Static Site Generator - https://www.11ty.dev
+Gerador de site estático usado para compilar os arquivos .njk e estruturar o site final na pasta _site.
+
+Day.js – JavaScript Date Library - https://day.js.org
+Biblioteca JavaScript leve usada para lidar com datas e horários, como exibir a hora atual ou nomes dos dias da semana.
+
+W3Schools – Documentação HTML, CSS, JS - https://www.w3schools.com
+Recurso utilizado como base para consultas rápidas sobre HTML, CSS e JavaScript ao longo do desenvolvimento.
+
+Google Fonts – Fontes Web - https://fonts.google.com
+Fonte "Poppins" utilizada no projeto foi importada diretamente do Google Fonts para personalizar a tipografia do site.
 
 ---
 

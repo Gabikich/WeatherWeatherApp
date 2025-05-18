@@ -12,6 +12,7 @@
   <script src="data/weather_data.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
   <script src="js/bulma.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -56,8 +57,20 @@
 
   {% include "footer.njk" %}
 
+       // generate cards for cities 
+
     <script>
-        // generate the cards of the favorite cities
+    const weatherIcons = {
+      0: "fa-sun",
+      1: "fa-cloud-sun",
+      2: "fa-cloud",
+      3: "fa-cloud",
+      51: "fa-cloud-rain",
+      61: "fa-cloud-showers-heavy",
+      80: "fa-cloud-bolt",
+      71: "fa-snowflake"
+  };
+
         document.addEventListener('DOMContentLoaded', () => {
         const favoriteCities = JSON.parse(localStorage.getItem('favoriteCities') || '[]');
         const container = document.getElementById('cityCardsContainer');
@@ -73,28 +86,38 @@
             if (daily) {
               tempMax = daily.temperature_2m_max[0];
               tempMin = daily.temperature_2m_min[0];
+              let icon = 'fa-question-circle';
             }
+
+
+        if (daily) {
+          tempMax = daily.temperature_2m_max[0];
+          tempMin = daily.temperature_2m_min[0];
+          const code = daily.weather_code[0];
+          icon = weatherIcons[code] || 'fa-question-circle';
+        }
 
             const cityCard = document.createElement('div');
             cityCard.classList.add('column', 'is-one-third');
             cityCard.innerHTML = `
             <div class="card" data-city="${city}" onclick="window.location.href='/cityfocus/?city=${city}';">
-    <header class="card-header has-background-info-light	">
+      <header class="card-header has-background-info-light	">
         <p class="card-header-title is-flex is-justify-content-center"">
           ${city}
         </p>
       </header>
 
-      <article class="card-content">
-        <div class="columns is-mobile is-centered has-text-centered">
-          <div class="column">
-            <p class="is-size-4">${tempMin}°C</p>
-            <p class="is-size-7 has-text-grey">Min</p>
-          </div>
-          <div class="column">
-            <p class="is-size-4">${tempMax}°C</p>
-            <p class="is-size-7 has-text-grey">Max</p>
-          </div>
+      <article class="card-content has-text-centered">
+              <p class="icon is-large mb-3"><i class="fas ${icon} fa-2x"></i></p>
+        <div class="columns is-mobile is-centered">    
+            <div class="column">
+              <p class="is-size-4">${tempMin}°C</p>
+              <p class="is-size-7 has-text-grey">Min</p>
+            </div>
+            <div class="column">
+              <p class="is-size-4">${tempMax}°C</p>
+              <p class="is-size-7 has-text-grey">Max</p>
+            </div>
         </div>
       </article>
 
