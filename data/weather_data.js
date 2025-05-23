@@ -6779,7 +6779,7 @@ const weatherData = {
       ]
     }
   },
-  "new_york_daily": {
+  "newyork_daily": {
     "latitude": 40.685307,
     "longitude": -74.14865,
     "generationtime_ms": 0.3650188446044922,
@@ -6922,7 +6922,7 @@ const weatherData = {
       ]
     }
   },
-  "new_york_hourly": {
+  "newyork_hourly": {
     "latitude": 40.685307,
     "longitude": -74.14865,
     "generationtime_ms": 0.21898746490478516,
@@ -10169,7 +10169,7 @@ const weatherData = {
       ]
     }
   },
-  "san_francisco_daily": {
+  "sanfrancisco_daily": {
     "latitude": 37.74886,
     "longitude": -122.47862,
     "generationtime_ms": 0.26798248291015625,
@@ -10312,7 +10312,7 @@ const weatherData = {
       ]
     }
   },
-  "san_francisco_hourly": {
+  "sanfrancisco_hourly": {
     "latitude": 37.74886,
     "longitude": -122.47862,
     "generationtime_ms": 0.22304058074951172,
